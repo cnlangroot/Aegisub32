@@ -2,7 +2,7 @@
 
 ##### 8.18更新：修复内存泄漏。
 ##### 8.11更新：禁用自动更新修复退出时程序错误。
-##### 8.3更新：修复truehd atmos不能加载问题，增加窗口可拖拽功能，增加Ctrl键配合鼠标中键可放大缩小移动画面功能。视频菜单reset video pan可恢复原始状态。
+##### 8.3更新：修复truehd atmos不能加载问题，增加窗口可拖拽功能，增加Ctrl键配合鼠标中键可放大缩小移动画面功能。(菜单reset video pan可恢复原始状态)
 ##### 7.25更新：增加1080，2160视频加黑边功能。
 ###### 补充说明：当使用加黑边功能载入视频时，需要作Aegisub-Motion时，脚本裁剪出的视频还是没加黑边的。解决方法如下：
 * "#{encbin}" -ss #{startt} -an -sn -i "#{inpath}/#{input}" -vf "scale=1920:804,pad=1920:1080:0:138:black" -q:v 1 -vsync passthrough -frames:v #{lenf} "#{prefix}/#{output}[#{startf}-#{endf}]-%05d.jpg"
